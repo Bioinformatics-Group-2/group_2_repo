@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{cite}
+\usepackage{hyperref}
+
+\title{Analysis of Tumor-Normal Single-Cell Ecosystems Across Cancer Types}
+\author{Your Name \\ CISC 5790 Data Mining}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\onehalfspacing
+
+\section{Introduction}
+
+Understanding tumor biology at the single-cell level has become a central focus in cancer research. 
+Traditional bulk sequencing methods average signals across many cells, which can obscure important cellular diversity.
+
+In this study, the authors perform a large-scale single-cell analysis across nearly one thousand tumors spanning 30 cancer types 
+\cite{kang2024systematic}. Their goal is to better understand tumor microenvironments and how cancer cells interact with surrounding normal and immune cells.
+
+\section{Biological Context}
+
+Tumors are not homogeneous masses of identical cells. Instead, they consist of a complex ecosystem of:
+\begin{itemize}
+    \item Cancer cells with diverse genetic profiles
+    \item Immune cells responding to the tumor
+    \item Stromal and supporting tissue cells
+\end{itemize}
+
+Single-cell technologies allow researchers to resolve these populations individually, providing a more detailed view of tumor biology.
+
+\section{Biological Question}
+
+The central question of this study is:
+
+\textit{How do tumor and normal cells interact across different cancer types at single-cell resolution, and what patterns emerge across a large cohort of tumors?}
+
+The authors aim to:
+\begin{itemize}
+    \item Characterize cellular composition of tumors
+    \item Compare tumor ecosystems across cancer types
+    \item Identify conserved and cancer-specific patterns
+\end{itemize}
+
+\section{Methods}
+
+The study uses a large-scale single-cell RNA sequencing dataset and applies computational analysis to dissect tumor ecosystems.
+
+Key steps include:
+\begin{itemize}
+    \item \textbf{Data collection:} Single-cell RNA-seq data from ~1000 tumors
+    \item \textbf{Preprocessing:} Quality control, filtering, normalization
+    \item \textbf{Clustering:} Grouping cells by gene expression profiles
+    \item \textbf{Annotation:} Assigning biological identities to clusters
+    \item \textbf{Cross-cancer comparison:} Identifying shared and unique patterns
+\end{itemize}
+
+\section{Results}
+
+The authors identify several key findings:
+\begin{itemize}
+    \item Tumors exhibit highly diverse cellular ecosystems
+    \item Immune infiltration patterns vary significantly across cancer types
+    \item Certain cell states are conserved across multiple cancers
+    \item Tumor microenvironment composition is linked to disease behavior
+\end{itemize}
+
+These findings suggest that tumor biology cannot be fully understood without considering single-cell heterogeneity.
+
+\section{Discussion}
+
+This study demonstrates the power of large-scale single-cell analysis in uncovering biological complexity.
+
+However, challenges include:
+\begin{itemize}
+    \item High computational cost of single-cell analysis
+    \item Data integration across multiple sources
+    \item Biological interpretation of high-dimensional clusters
+\end{itemize}
+
+Despite these challenges, the study provides a comprehensive atlas of tumor ecosystems.
+
+\section{Conclusion}
+
+This work significantly advances our understanding of tumor heterogeneity by analyzing nearly 1000 tumors across 30 cancer types at single-cell resolution.
+
+It highlights the importance of computational biology in revealing patterns that are not visible through traditional bulk sequencing approaches.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

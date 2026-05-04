@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{cite}
+\usepackage{hyperref}
+
+\title{Analysis of an Open-Source Framework for End-to-End Electronic Health Record Data}
+\author{Your Name \\ CISC 5790 Data Mining}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\onehalfspacing
+
+\section{Introduction}
+
+Electronic health record (EHR) data has become an important resource for modern biomedical research. 
+However, analyzing this data is challenging due to its complexity, scale, and variability across healthcare systems. 
+Recent work has focused on developing computational frameworks that streamline the process of extracting, processing, 
+and analyzing EHR data.
+
+In this paper, the authors present an open-source framework designed to enable end-to-end analysis of EHR data 
+\cite{heumos2024open}. Their goal is to simplify the process of working with large clinical datasets and make 
+advanced analytics more accessible to researchers.
+
+\section{Biological and Clinical Context}
+
+EHR data contains valuable patient information such as diagnoses, treatments, and outcomes. 
+By analyzing this data, researchers can uncover patterns related to disease progression, treatment effectiveness, 
+and patient risk factors.
+
+However, EHR data is often:
+\begin{itemize}
+    \item High-dimensional and heterogeneous
+    \item Incomplete or noisy
+    \item Difficult to standardize across institutions
+\end{itemize}
+
+The framework proposed in this study addresses these challenges by providing tools for data integration, 
+processing, and analysis.
+
+\section{Methods}
+
+The framework introduced by the authors follows a structured pipeline:
+
+\begin{itemize}
+    \item \textbf{Data ingestion:} Importing raw EHR data from multiple sources
+    \item \textbf{Preprocessing:} Cleaning, normalizing, and structuring the data
+    \item \textbf{Feature extraction:} Transforming raw data into usable variables
+    \item \textbf{Modeling:} Applying statistical and machine learning methods
+    \item \textbf{Evaluation:} Assessing model performance and clinical relevance
+\end{itemize}
+
+This modular design allows researchers to adapt the pipeline to different datasets and research questions.
+
+\section{Results and Contributions}
+
+The authors demonstrate that their framework can effectively handle large-scale EHR datasets 
+and support a variety of analytical tasks.
+
+Key contributions include:
+\begin{itemize}
+    \item A fully open-source, end-to-end pipeline
+    \item Improved reproducibility in EHR-based research
+    \item Flexibility for different clinical applications
+\end{itemize}
+
+\section{Discussion}
+
+This framework represents an important step toward making EHR data more accessible for computational research. 
+By standardizing the workflow, it reduces barriers for researchers who may not have extensive experience 
+with large-scale data engineering.
+
+However, challenges remain, including:
+\begin{itemize}
+    \item Data privacy and access restrictions
+    \item Variability in EHR formats across institutions
+    \item Computational resource requirements
+\end{itemize}
+
+\section{Conclusion}
+
+The open-source framework proposed in this study provides a powerful tool for analyzing EHR data. 
+It improves reproducibility, scalability, and accessibility, making it a valuable contribution 
+to the field of biomedical data science.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
